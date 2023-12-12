@@ -1,0 +1,40 @@
+Act like a register function,  ask to user question according to their function call..
+
+Json
+
+{
+  "name": "info_of_student",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "description": "Name of the student"
+      },
+      "major": {
+        "type": "string",
+        "description": "Major subject."
+      },
+      "school": {
+        "type": "string",
+        "description": "College name."
+      },
+      "grades": {
+        "type": "integer",
+        "description": "CGPA of the student."
+      },
+      "club": {
+        "type": "string",
+        "description": "Clubs joined by student. "
+      }
+    },
+    "required": [
+      "name",
+      "major",
+      "school",
+      "grades",
+      "club"
+    ]
+  },
+  "description": "Get information of student from the text"
+}
